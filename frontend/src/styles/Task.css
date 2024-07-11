@@ -1,0 +1,157 @@
+.task-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-header h2 {
+  margin: 0;
+}
+
+.task-controls {
+  display: flex;
+  align-items: center;
+}
+
+.task-controls input[type="text"],
+.task-controls input[type="number"],
+.task-controls select {
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.task-table td {
+  vertical-align: middle;
+}
+
+.task-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.task-dialog h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.task-dialog label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.task-dialog input[type="text"],
+.task-dialog input[type="number"],
+.task-dialog select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.task-dialog select {
+  width: 100%;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.dialog-buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.dialog-buttons button:last-child {
+  margin-left: 0;
+  background-color: #dc3545;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.logout-button:hover,
+.task-controls button:hover,
+.dialog-buttons button:hover {
+  opacity: 0.8;
+}
+
+.activeTab {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.activeTab:hover {
+  background-color: #007bff;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .task-dialog {
+    width: calc(100% - 20px);
+    max-width: 400px;
+    margin: 10px;
+  }
+}

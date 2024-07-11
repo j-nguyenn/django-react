@@ -1,0 +1,133 @@
+/* Proxies.css */
+.proxies-container {
+    display: flex;
+    gap: 20px;
+}
+
+.proxies-table {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    width: 500px;
+    
+}
+
+.status {
+    display: flex;
+    width: 50px;
+}
+.proxies-table h2 {
+    margin-bottom: 20px;
+}
+
+.proxies-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proxies-table th, .proxies-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.proxies-table tr:hover {
+    background-color: #b0b0b0;
+    cursor: pointer;
+}
+
+.proxy-details {
+    padding-left: 20px;
+}
+
+.proxy-details h2, .proxy-details p {
+    margin-bottom: 10px;
+}
+
+.proxy-details hr {
+    margin: 20px 0;
+}
+
+.proxy-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.proxy-details ul li {
+    margin-bottom: 10px;
+}
+
+.proxy-details ul li input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.proxy-details button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #232326;
+    padding: 20px;
+    border-radius: 4px;
+    width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content input {
+    width: 380px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.modal-content button:last-child {
+    background-color: #dc3545;
+}
+
+.text-btn {
+    color: #555;
+}
+
+.text-btn:hover {
+    cursor: pointer;
+}
+
+.proxies-all {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+}
