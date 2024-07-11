@@ -43,7 +43,7 @@ function Form({ route, method }) {
     return (
         <div className="form-container">
             <form onSubmit={handleSubmit}>
-                <h1>Todo App</h1>
+                <h1>Ticketmaster</h1>
                 <h2>{name}</h2>
                 <input
                     type="text"
