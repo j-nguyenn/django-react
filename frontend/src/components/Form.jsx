@@ -52,7 +52,7 @@ function Form({ route, method }) {
                     onChange={(e) => setUsername(e.target.value)}
                     className="text"
                     required
-                /> <br />
+                />
                 <input
                     type="password"
                     placeholder="Password"
